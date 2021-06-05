@@ -370,5 +370,45 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "address": "Rua do Cacto",
+      "number": "65",
+      "optionalAddress": "B",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 3,
+          "menuId": "cup-cake"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "address": "Rua do Juazeiro",
+      "number": "55",
+      "optionalAddress": "B",
+      "paymentOption": "DEB",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "capp"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "address": "Rua da Amoroza",
+      "number": "45",
+      "optionalAddress": "B",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 2,
+          "menuId": "sunday"
+        }
+      ],
+      "id": 3
+    }
+  ]
 }

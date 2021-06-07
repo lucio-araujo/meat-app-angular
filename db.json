@@ -409,6 +409,22 @@
         }
       ],
       "id": 3
+    },
+    {
+      "name": "Lúcio",
+      "email": "lucio@email.com",
+      "emailConfirmation": "lucio@email.com",
+      "address": "Rua do Juazeiro",
+      "number": "65",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "capp"
+        }
+      ],
+      "id": 4
     }
   ]
 }

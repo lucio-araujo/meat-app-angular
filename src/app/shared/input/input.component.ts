@@ -27,7 +27,7 @@ export class InputComponent implements OnInit {
     }
   }
 
-  hasSucess(): boolean {
+  hasSuccess(): boolean {
     return this.input.valid && (this.input.dirty || this.input.touched)
   }
 

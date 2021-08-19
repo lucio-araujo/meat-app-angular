@@ -441,6 +441,22 @@
         }
       ],
       "id": 5
+    },
+    {
+      "name": "Lúcio",
+      "email": "lucio@email.com",
+      "emailConfirmation": "lucio@email.com",
+      "address": "Rua do Cacto",
+      "number": "105",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        }
+      ],
+      "id": 6
     }
   ]
 }

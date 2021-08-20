@@ -8,18 +8,21 @@ import { HomeComponent } from './home/home.component';
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { LoginComponent } from './security/login/login.component';
+import { LoggedInGuard } from './security/loggedin.guard';
 
 export const ROUTES: Routes = [
     {path: '', component: HomeComponent},
     {path: 'login', component: LoginComponent},
-    {path: 'restaurants', component: RestaurantsComponent},
+    {path: 'login/:to', component: LoginComponent},
     {path: 'restaurants/:id', component: RestaurantDetailComponent, 
         children: [
             {path: '', redirectTo: 'menu', pathMatch: 'full'},
             {path: 'menu', component: MenuComponent},
             {path: 'reviews', component: ReviewsComponent}
         ]},
-    {path: 'order', loadChildren: 'app/order/order.module#OrderModule'},
+    {path: 'restaurants', component: RestaurantsComponent},
+    {path: 'order', loadChildren: 'app/order/order.module#OrderModule',
+        canLoad: [LoggedInGuard], canActivate: [LoggedInGuard]},
     {path: 'order-summary', component: OrderSummaryComponent},
     {path: 'about', loadChildren: 'app/about/about.module#AboutModule'},
     {path: '**', component: NotFoundComponent}
